@@ -16,6 +16,7 @@ document.addEventListener("DOMContentLoaded", () => {
       document.getElementById("hijri-date").textContent = `Hijri: ${hijriDate.day} ${hijriDate.month.en} ${hijriDate.year}`;
 
       const list = document.getElementById("prayer-times");
+      list.innerHTML = ''; // Clear loading text
       const prayerOrder = ['Fajr', 'Sunrise', 'Dhuhr', 'Asr', 'Maghrib', 'Isha'];
       const prayerTimes = {};
 
