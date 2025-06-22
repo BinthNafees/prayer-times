@@ -2,15 +2,22 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Live Prayer Times – Puttalam</title>
+  <title>Puttalam Prayer Times</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <div class="container">
-    <h1>🕌 Prayer Times – Puttalam</h1>
-    <div id="date"></div>
-    <ul id="prayer-times"></ul>
-    <p id="updated-time"></p>
+    <h1>🕌 Puttalam Prayer Times</h1>
+    <div id="dates">
+      <span id="greg-date">Loading...</span> |
+      <span id="hijri-date">Loading...</span>
+    </div>
+    <ul id="prayer-times">
+      <li>Loading prayer times...</li>
+    </ul>
+    <div id="next-prayer">Calculating next prayer...</div>
+
+    <audio id="azan" src="azan.mp3" preload="auto"></audio>
   </div>
 
   <script src="script.js"></script>
